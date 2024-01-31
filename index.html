@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library of Congress Search Tool</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
 <body>
-    
-</body>
+    <body class="d-flex flex-column" style="height: 100%;"></body>
+    <header>
+        <h1>Library of Congress Search Tool</h1>
+    </header>
+
+    <!-- Search Form -->
+    <section>
+        <form id="searchForm">
+            <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter search term...">
+            
+            <!-- Dropdown -->
+            <select id="formatSelect" name="format">
+                <option value="all">All Formats</option>
+                <option value="books">Books</option>
+                <option value="photos">Photos</option>
+                <option value="recordings">Recordings</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="resultsSection" class="container mt-4 flex-grow-1">
+       
+    </section>
+
+    <footer class="bg-dark text-center text-white py-2">
+
+        <p>Project by the A-Team</p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+
 </html>
